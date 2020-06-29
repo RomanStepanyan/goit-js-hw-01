@@ -1,0 +1,15 @@
+const total = 100;
+let ordered = 50;
+const notEnough = "На складе недостаточно твоаров!";
+const enoughOrdered = "Заказ оформлен, с вами свяжется менеджер";
+let goodsOnStock = total > ordered ? enoughOrdered : notEnough;
+console.log(goodsOnStock);
+ordered = 130;
+goodsOnStock = total > ordered ? enoughOrdered : notEnough;
+console.log(goodsOnStock);
+ordered = 20;
+goodsOnStock = total > ordered ? enoughOrdered : notEnough;
+console.log(goodsOnStock);
+ordered = 180;
+goodsOnStock = total > ordered ? enoughOrdered : notEnough;
+console.log(goodsOnStock);
