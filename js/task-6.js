@@ -1,7 +1,7 @@
 let total = 0;
 let input;
 
-while('GO'<'IT'){
+while('GO'>'IT' == false){
     input = prompt('Введите число или нажмите Отмена');
     if (input == null) {
         alert('Отменено пользователем!');
