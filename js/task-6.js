@@ -1,10 +1,9 @@
 let total = 0;
 let input;
-
-while('GO'>'IT' == false){
+do {
     input = prompt('Введите число или нажмите Отмена');
     if (input == null) {
-        alert('Отменено пользователем!');
+        alert(`Общая сумма чисел равна ${total}`);
         break;
     }
     input = Number(input);
@@ -16,5 +15,5 @@ while('GO'>'IT' == false){
     }
 
     total += input;
-}
-alert(`Общая сумма чисел равна ${total}`)
+
+} while (input !== null);

@@ -1,8 +1,7 @@
-let credits = 23580;
+const credits = 23580;
 const pricePerDroid = 3000;
 let totalPrice;
-let order;
-order = prompt('Сколько дроидов вы хотите заказать?:');
+const order = prompt('Сколько дроидов вы хотите заказать?:');
 if (order == null) {
     alert('Отменено пользователем!');
 }

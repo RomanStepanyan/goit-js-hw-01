@@ -1,32 +1,39 @@
 let deliveryCost;
-let country = prompt('Введите страну доставки:');
+let country = prompt("Введите страну доставки:").toLowerCase();
 if (country == null) {
-    alert('Отменено пользователем!');
-}
-else{
-    switch (country.toLowerCase()) {
-        case 'китай' :
-        deliveryCost = 100;
-        break;
-        case  'чили' :
-        deliveryCost = 250;
-        break;
-        case 'австралия' :
-        deliveryCost = 170;
-        break;
-        case 'индия' :
-        deliveryCost = 80;
-        break;
-        case 'ямайка' :
-        deliveryCost = 120;
-        break;    
-    
-    default: alert('В вашей стране доставка не доступна');
-    break;
+  alert("Отменено пользователем!");
+} else {
+  switch (country) {
+    case "китай":
+      deliveryCost = 100;
+      country = country[0].toUpperCase() + country.slice(1);
+      console.log(`Доставка в ${country} будет стоить ${deliveryCost} кредитов`);
+      break;
+    case "чили":
+      deliveryCost = 250;
+      country = country[0].toUpperCase() + country.slice(1);
+      console.log(`Доставка в ${country} будет стоить ${deliveryCost} кредитов`);
+      break;
+    case "австралия":
+      deliveryCost = 170;
+      country = country[0].toUpperCase() + country.slice(1);
+      console.log(`Доставка в ${country} будет стоить ${deliveryCost} кредитов`);
+      break;
+    case "индия":
+      deliveryCost = 80;
+      country = country[0].toUpperCase() + country.slice(1);
+      console.log(`Доставка в ${country} будет стоить ${deliveryCost} кредитов`);
+      break;
+    case "ямайка":
+      deliveryCost = 120;
+      country = country[0].toUpperCase() + country.slice(1);
+      console.log(`Доставка в ${country} будет стоить ${deliveryCost} кредитов`);
+      break;
+
+    default:
+      alert("В вашей стране доставка не доступна");
+      break;
+  }
 }
 
-country = country.charAt(0).toUpperCase() + country.substr(1);
-console.log(`Доставка в ${country} будет стоить ${deliveryCost} кредитов`);
-
-}
 
